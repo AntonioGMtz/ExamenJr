@@ -7,16 +7,16 @@
 
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.examenjr.MovieFragment"
+        android:name="com.example.examenjr.ui.movie.MovieFragment"
         android:label="fragment_movie"
-        tools:layout="@layout/fragment_movie" >
+        tools:layout="@layout/fragment_movie">
         <action
             android:id="@+id/action_movieFragment_to_detailFragmentMovie"
             app:destination="@id/detailFragmentMovie" />
     </fragment>
     <fragment
         android:id="@+id/detailFragmentMovie"
-        android:name="com.example.examenjr.DetailFragmentMovie"
+        android:name="com.example.examenjr.ui.moviedetail.DetailFragmentMovie"
         android:label="fragment_detail_movie"
         tools:layout="@layout/fragment_detail_movie" />
 </navigation>

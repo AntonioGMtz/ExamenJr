@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
     id 'androidx.navigation.safeargs.kotlin'
 }
 
@@ -45,8 +46,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
 
     //Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.3.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.3.2")
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.2"
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
+
+    //With concat adapter
+    implementation "androidx.recyclerview:recyclerview:1.2.0-beta01"
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
