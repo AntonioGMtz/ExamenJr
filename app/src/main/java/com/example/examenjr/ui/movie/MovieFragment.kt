@@ -65,7 +65,8 @@ class MovieFragment : Fragment(R.layout.fragment_movie), MoviesAdapter.OnMovieCl
         })
     }
     override fun onMovieClick(movie: Movie) {
-        Log.d("Movie", "onMovieClick: $movie")
+        val action = MovieFragmentDirections.actionMovieFragmentToDetailFragmentMovie(movie.poster_path,movie.backdrop_path,movie.vote_average.toFloat(),movie.vote_count,movie.overview,movie.title,movie.original_language,movie.release_date)
+        findNavController().navigate(action)
     }
 
 }
