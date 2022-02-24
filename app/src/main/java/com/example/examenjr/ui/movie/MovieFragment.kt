@@ -1,4 +1,4 @@
-package com.example.examenjr
+package com.example.examenjr.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
