@@ -1,7 +1,8 @@
-package com.example.examenjr
+package com.example.examenjr.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.examenjr.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
