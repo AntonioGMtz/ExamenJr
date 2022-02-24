@@ -1,8 +1,9 @@
 package com.example.examenjr.data.remote
 
-import com.example.examenjr.core.Resource
+import com.example.examenjr.application.AppConstants
+
 import com.example.examenjr.data.model.MovieList
-import com.example.examenjr.domain.WebService
+import com.example.examenjr.repository.WebService
 
 class MovieDataSource(private val webService: WebService) {
 
